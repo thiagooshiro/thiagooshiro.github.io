@@ -1,113 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portifólio</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiago Oshiro - Portfólio</title>
 
-      body{
-        background-color: darkcyan;
-        
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
-      }
-
-      h1{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-      }
-
-      h2{
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-      }
-
-      p{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 22px;
-        font-style: italic;
-        text-align: justify;
-        padding-left: 16px;
-      }
-
-      .picture{
-        border-radius: 50%;
-        padding-left: 18cm;
-        padding-right: 18cm;
-
-      }
-
-      .atento{
-        font-size: 20px;
-        font-style: italic;
-        
-      }
-
-      .professor{
-        font-size: 18px;
-        font-style: italic;
-
-      }
-
-      .aprender{
-        font-size: 18px;
-      }
-
-      .listahabil{
-        font-size: 18px;
-        font-family: monospace;
-      }
-
-      .linkpanda{
-        padding-left: 10px;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: bold;
-      }
-
-
-
-    </style>
-
-
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Thiago Pignataro Oshiro</h1>
-    <img class="picture" src="oshiro2011.jpg" alt="Oshiro no campeonato em 2011" width="500px">
-    <br>
-    <hr>
-    <h2 id="quemsou">Quem sou eu?</h2>
-    <p> <strong> Ouropretano, filho de pais professores, formado em história,
-        instrutor de Kung Fu e estudante de desenvolvimento web na Trybe.</strong>
-    </p><br>
-    <hr>
-    <h2 id="habilidades">Habilidades</h2>
-    <ul>
-      <li class="atento"><strong>Atento</strong></li>
-      <li class="professor">Bom professor</li>
-      <li class="aprender">Gosta de aprender coisas novas</li>
-    </ul>
-    <hr>
-    <br>
-    <h2 id="aprendizado">Em aprendizado</h2>
-    <ul>
-      <li>Unix e Bash</li>
-      <li>Git e GitHub</li>
-      <li>Html e CSS</li>
-      <li>JavaScript</li>
-    </ul>
-    <hr>
-    <br>
-    <a class="linkpanda" href="https://thiagopignatarooshiro.medium.com/kung-fu-panda-breve-reflex%C3%A3o-sobre-viol%C3%AAncia-171cc6ba1b4f" target="_blank">Um texto meu sobre Kung Fu</a><br><br><br><br>
-    <hr>
-    <h2>Links das seções</h2>
-    <ul class="listahabil">
-      <li><a href="#quemsou">Quem sou?</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#aprendizado">O que estou aprendendo</a></li>
-    </ul>
 
+  <!-- HEADER -->
+  <header>
+    <img src="foto.jpg" alt="Thiago Oshiro">
+    <div class="intro-text">
+      <h1>Thiago Pignataro Oshiro</h1>
+      <p>Full Stack Developer · Coding Tutor · AI Enthusiast</p>
+    </div>
+  </header>
 
-    
+  <!-- PROJETOS -->
+  <section class="projects">
+    <h2>Projetos</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Cafeteria Django</h3>
+        <p>Aplicação full stack com Django + Next.js simulando uma cafeteria online.</p>
+        <div class="buttons">
+          <a href="https://github.com/thiagooshiro/cafeteria-django" target="_blank">Código</a>
+        </div>
+      </div>
+
+      <div class="card tbd">
+        <h3>Murder Agents</h3>
+        <p>Jogo investigativo com AI Agents em React.</p>
+        <span>Em desenvolvimento</span>
+      </div>
+
+      <div class="card tbd">
+        <h3>Angular Java CRUD</h3>
+        <p>CRUD completo com Spring Boot + Angular.</p>
+        <span>Em desenvolvimento</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="social">
+      <a href="https://github.com/thiagooshiro" target="_blank" aria-label="GitHub">
+        <i data-lucide="github"></i>
+      </a>
+      <a href="https://linkedin.com/in/seu-usuario" target="_blank" aria-label="LinkedIn">
+        <i data-lucide="linkedin"></i>
+      </a>
+    </div>
+    <p>© 2026 Thiago Oshiro</p>
+  </footer>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
 </body>
 </html>
