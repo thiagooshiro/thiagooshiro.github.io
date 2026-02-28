@@ -77,6 +77,15 @@ header img {
   transition: 0.3s ease;
 }
 
+.card img {
+  width: 100%;
+  height: 160px;           /* controla proporção visual */
+  object-fit: cover;       /* evita distorção */
+  border-radius: 8px;      /* combina com o card */
+  margin-bottom: 1rem;
+  display: block;
+}
+
 .card:hover {
   transform: translateY(-6px);
   box-shadow: 0 0 20px #8a00cc55;
